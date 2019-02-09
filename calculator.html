@@ -11,7 +11,13 @@ function cube() {
 /* Calcula el seno de un número*/
 function seno() {
   var num = document.getElementById("n1");
-  num.value = Math.sin(num.value);
+  num.value = Math.sin(num.value)
+}
+
+/* Calcula la cuarta potencia de un número*/
+function cuarta() {
+  var num = document.getElementById("n1");
+  num.value = Math.pow(num.value, 4);
 }
 
 
@@ -25,6 +31,10 @@ function seno() {
   <input type="text" id="n1"><p>
 
   <button onclick="cube()"> <b>X<sup>3</sup> </b></button>
+
   <button onclick="seno()"> <b> Seno(X) </b></button>
+
+  <button onclick="cuarta()"> <b>X<sup>4</sup> </b></button>
+
 </body>
 </html>
