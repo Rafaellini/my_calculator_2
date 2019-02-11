@@ -2,6 +2,12 @@
 <title>Calculator</title><meta charset="utf-8">
 <script type="text/javascript">
 
+/* Calcula el inverso de un número*/
+function inverso() {
+  var num = document.getElementById("n1");
+  num.value = 1/num.value;
+}
+
 /* Calcula el cuadrado de un número*/
 function cuadrado() {
   var num = document.getElementById("n1");
@@ -36,12 +42,13 @@ function cuarta() {
   Number:
   <input type="text" id="n1"><p>
 
-  <button onclick="cuadrado()"> <b>X<sup>2</sup> </b></button>
-  <button onclick="cube()"> <b>X<sup>3</sup> </b></button>
+  <button onclick="inverso()"> <b>1/X </b></button>
+  <button onclick="cuadrado()"> <b>X<sup>2</sup> </b></button> <!--- x^2 --->
+  <button onclick="cube()"> <b>X<sup>3</sup> </b></button>		<!--- x^3 --->
 
-  <button onclick="seno()"> <b> Seno(X) </b></button>
+  <button onclick="seno()"> <b> Seno(X) </b></button>			
 
-  <button onclick="cuarta()"> <b>X<sup>4</sup> </b></button>
+  <button onclick="cuarta()"> <b>X<sup>4</sup> </b></button>	<!--- x^4 --->
 
 </body>
 </html>
